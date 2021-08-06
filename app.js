@@ -82,7 +82,7 @@ const handleCM = (event) => {
 };
 
 const handleSaveClick = () => {
-  const image = canvas.toDataUrl("image/jpeg");
+  const image = canvas.toDataURL(); // 디폴트는 png
   const link = document.createElement("a");
   link.href = image;
   link.download = "PaintJS[EXPORT]";
